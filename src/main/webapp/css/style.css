@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Navbar */
 .navbar {
     background: linear-gradient(90deg, #7b5cff, #4b2cff);
     display: flex;
@@ -12,11 +13,13 @@ body {
     height: 70px;
 }
 
+/* Logo FIX */
 .logo img {
-   height: 85px;
+   height: 100px;   /* FIXED */
    width: auto;
 }
 
+/* Menu */
 .menu a {
     color: white;
     text-decoration: none;
@@ -30,19 +33,23 @@ body {
     color: #ffd700;
 }
 
-/* Hero Section */
+/* Hero Section FIX */
 .hero {
     height: calc(100vh - 70px);
     background: #f5f7fa;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 80px;
+    padding: 0 80px;   /* FIXED */
+    overflow: hidden;
 }
 
+/* Left content */
 .hero-content {
     max-width: 500px;
 }
 
+/* Text */
 .hero h1 {
     font-size: 48px;
     font-weight: bold;
@@ -55,4 +62,97 @@ body {
     color: #555;
     line-height: 1.6;
     margin-bottom: 25px;
+}
+
+/* Image FIX */
+.hero-image img {
+    width: 520px;     /* slightly reduced */
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #7b5cff, #4b2cff);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Container */
+.login-container {
+    height: 100vh;
+    background: linear-gradient(135deg, #4b2cff, #7b5cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box */
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.login-box h2 {
+    margin-bottom: 8px;
+    color: #2c2c54;
+}
+
+/* Subtitle */
+.login-box p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Row Layout */
+.login-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Buttons */
+.login-btn {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Colors */
+.patient {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.doctor {
+    background: linear-gradient(90deg, #43e97b, #38f9d7);
+}
+
+.admin {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+
+/* Hover */
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }

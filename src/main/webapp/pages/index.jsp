@@ -33,6 +33,12 @@
             and appointments efficiently. This system helps hospitals
             streamline operations and improve patient care.
         </p>
+        <a href="login.jsp" class="btn">Login</a>
+        
+    	</div>
+    	
+    	<div class="hero-image">
+    	<img src="../images/hero.png" alt="Healthcare Image">
     	</div>
     </div>
 
